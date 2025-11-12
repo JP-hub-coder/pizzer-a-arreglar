@@ -32,13 +32,13 @@
 			
 			Segun pizza Hacer
 				1:
-					Tamañopizza(TotalMesa)
+					TamaÃ±opizza(TotalMesa)
 				2:
-					Tamañopizza(TotalMesa)
+					TamaÃ±opizza(TotalMesa)
 				3:
-					Tamañopizza(TotalMesa)  
+					TamaÃ±opizza(TotalMesa)  
 				4:
-					Tamañopizza(TotalMesa)
+					TamaÃ±opizza(TotalMesa)
 				5:
 					Imprimir "Presione cualquier tecla para continuar..."
 					Esperar Tecla
@@ -65,7 +65,7 @@ FinFuncion
 
 Funcion adicionales(TotalMesa Por Referencia)
 	Imprimir "==========================="
-	Imprimir "Que adicional desea añadir?"
+	Imprimir "Que adicional desea aÃ±adir?"
 	Imprimir "1.        Doble Queso 10000"
 	Imprimir "2.        Doble Salsa 10000"
 	Imprimir "3.        Ninguno"
@@ -111,21 +111,20 @@ Funcion Bebidas ( TotalMesa Por Referencia)
 	
 	Segun bebida Hacer
 		1:
-			TamañoBebida(TotalMesa)
+			TamaÃ±oBebida(TotalMesa)
 		2:	
-			TamañoBebida(TotalMesa)
+			TamaÃ±oBebida(TotalMesa)
 		3:
-			TamañoBebida(TotalMesa)
+			TamaÃ±oBebida(TotalMesa)
 		4: 
 			Imprimir "Bebida digitada"
 			Imprimir "Total Actual: $", TotalMesa
 	FinSegun
-	
 FinFuncion
 
-Funcion TamañoBebida(TotalMesa Por Referencia)
+Funcion TamaÃ±oBebida(TotalMesa Por Referencia)
 	Imprimir "============================="
-	Imprimir "En que tamaño desea su bebida?"
+	Imprimir "En que tamaÃ±o desea su bebida?"
 	Escribir "1.       Personal 3500"
 	Escribir "2.       1.5 L    7000"
 	Escribir "3.       Mega     9000"
@@ -159,12 +158,9 @@ Funcion TamañoBebida(TotalMesa Por Referencia)
 	FinSegun   
 FinFuncion
 
-
-
-
-Funcion Tamañopizza (TotalMesa Por Referencia)
+Funcion TamaÃ±opizza (TotalMesa Por Referencia)
 	Imprimir "============================="
-	Imprimir "En que tamaño desea su pizza?"
+	Imprimir "En que tamaÃ±o desea su pizza?"
 	Escribir "1.       Personal 8000"
 	Escribir "2.       Familiar 60000"
 	Escribir "3.       Mega     80000"
@@ -177,7 +173,7 @@ Funcion Tamañopizza (TotalMesa Por Referencia)
 	Segun Tpizza Hacer
 		1:
 			TotalMesa=TotalMesa+8000
-			Imprimir "Tamaño ingresado correctamente"
+			Imprimir "TamaÃ±o ingresado correctamente"
 			Imprimir "Su pizza ha sido elegida correctamente"
 			Imprimir "Valor actual: $", TotalMesa
 			Imprimir "Presione cualquier tecla para continuar"
@@ -185,7 +181,7 @@ Funcion Tamañopizza (TotalMesa Por Referencia)
 			Limpiar Pantalla
 		2:	
 			TotalMesa=TotalMesa+60000
-			Imprimir "Tamaño ingresado correctamente"
+			Imprimir "TamaÃ±o ingresado correctamente"
 			Imprimir "Su pizza ha sido elegida correctamente"
 			Imprimir "Valor actual: $", TotalMesa
 			Imprimir "Presione cualquier tecla para continuar"
@@ -193,7 +189,7 @@ Funcion Tamañopizza (TotalMesa Por Referencia)
 			Limpiar Pantalla
 		3:
 			TotalMesa=TotalMesa+80000
-			Imprimir "Tamaño ingresado correctamente"
+			Imprimir "TamaÃ±o ingresado correctamente"
 			Imprimir "Su pizza ha sido elegida correctamente"
 			Imprimir "Valor actual: $", TotalMesa
 			Imprimir "Presione cualquier tecla para continuar"
@@ -204,8 +200,6 @@ Funcion Tamañopizza (TotalMesa Por Referencia)
 	FinSegun   
 FinFuncion
 
-
-
-Algoritmo Pizzería
+Algoritmo PizzerÃ­a
 	menuprincipal(TotalGeneral,TotalMesa)
 FinAlgoritmo
