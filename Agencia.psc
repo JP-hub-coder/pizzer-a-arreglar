@@ -41,21 +41,21 @@ Algoritmo AgenciadeViajes
 		Escribir "2_______segunda clase"
 		Escribir "3_______clase economica"
 		leer Clase
-	    si Clase<1 o Clase>2 Entonces
+	    si Clase<1 o Clase>3 Entonces
 			Imprimir "Error, Valor no valido"
 		SiNo
 			Segun Clase Hacer
 				1:
 					Total=Total*1.4
-					Imprimir "se le añadio un costo adicional del 40% del costo actual"
+					Imprimir "se le aÃ±adio un costo adicional del 40% del costo actual"
 					Imprimir "Precio actual: $", Total
 				2:
 					Total=Total*1.2
-					Imprimir "se le añadio un costo adicional del 20% del costo actual"
+					Imprimir "se le aÃ±adio un costo adicional del 20% del costo actual"
 					Imprimir "Precio actual: $", Total
 					
 				3:
-					Imprimir "no se le añadira ningun costo"
+					Imprimir "no se le aÃ±adira ningun costo"
 					Imprimir "Precio actual: $", Total
 			Fin Segun
 			
