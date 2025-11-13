@@ -14,15 +14,17 @@
 			Esperar Tecla
 			Limpiar Pantalla
 			Imprimir "======== MESA #", i, "========"
-			Imprimir "================================"
-			Imprimir "Bienvenido a Pizzeria el Padrino"
-			Imprimir "================================"
-			Imprimir "Nuestras opciones generales de pizzas son:"
-			Escribir "1.          Pizza Hawaiana"
-			Escribir "2.          Pizza Americana"
-			Escribir "3.          Champizza"
-			Escribir "4.          La Especial"
-			Escribir "5.          SALIR"
+			Imprimir "=================================="
+			Imprimir "Bienvenido a Pizzeria el Padrino |"
+			Imprimir "=================================="
+			Imprimir "Que sabor de pizza desea ordenar?|"
+			Imprimir "---------------------------------|"
+			Escribir "1.----------Pizza Hawaiana       |"
+			Escribir "2.----------Pizza Americana      |"
+			Escribir "3.----------Champizza            |"
+			Escribir "4.----------La Especial          |"
+			Escribir "5.----------SALIR                |"
+			Imprimir "=================================="
 			leer pizza
 			
 			Mientras pizza<1 o pizza>5 Hacer
@@ -32,13 +34,13 @@
 			
 			Segun pizza Hacer
 				1:
-					Tama√±opizza(TotalMesa)
+					TamaÒopizza(TotalMesa)
 				2:
-					Tama√±opizza(TotalMesa)
+					TamaÒopizza(TotalMesa)
 				3:
-					Tama√±opizza(TotalMesa)  
+					TamaÒopizza(TotalMesa)  
 				4:
-					Tama√±opizza(TotalMesa)
+					TamaÒopizza(TotalMesa)
 				5:
 					Imprimir "Presione cualquier tecla para continuar..."
 					Esperar Tecla
@@ -52,23 +54,37 @@
 		Imprimir "Presione cualquier tecla para ir al total"
 		Esperar Tecla
 		Limpiar Pantalla
+		Imprimir "============================================="
 		Imprimir "El total de la mesa es de: $" , TotalMesa
+		Imprimir "============================================="
 	FinPara
 	TotalGeneral=TotalGeneral+TotalMesa
 	Imprimir "====================="
 	Imprimir "TOTAL DE LAS MESAS"
 	Imprimir TotalGeneral
+	Imprimir "====================="
+	Imprimir "!Gracias por usar nuestro sistema°"
 	Imprimir "Que vuelva pronto <3"
-	Imprimir "PROCESO TERMINADO"
+	Imprimir "====================="
+	Imprimir " (\_/)"
+	Imprimir " (∫_∫)"
+	Imprimir " (===) "
+	Imprimir "Mensaje del programador:"
+	Imprimir "!AYUDA POR FAVOR°"
 	Imprimir "====================="
 FinFuncion
 
 Funcion adicionales(TotalMesa Por Referencia)
-	Imprimir "==========================="
-	Imprimir "Que adicional desea a√±adir?"
-	Imprimir "1.        Doble Queso 10000"
-	Imprimir "2.        Doble Salsa 10000"
-	Imprimir "3.        Ninguno"
+	Limpiar Pantalla
+	Imprimir "============================"
+	Imprimir "Que adicional desea aÒadir?|"
+	Imprimir "---------------------------|"
+	Imprimir "Solo se permite 1 adicional|"
+	Imprimir "============================"
+	Imprimir "1.        Doble Queso 10000|"
+	Imprimir "2.        Doble Salsa 10000|"
+	Imprimir "3.        Ninguno          |"
+	Imprimir "============================"
 	leer adicional
 	
 	Mientras adicional<1 o adicional>3 Hacer
@@ -79,16 +95,25 @@ Funcion adicionales(TotalMesa Por Referencia)
 	Segun adicional Hacer
 		1:
 			TotalMesa=TotalMesa+10000
+			Imprimir "Cargando..."
+			Esperar 1 Segundos
 			Imprimir "Adicional ingresado correctamente"
+			Imprimir "Total actual: ", TotalMesa
 			Imprimir "Presione cualquier tecla para continuar"
 			Esperar Tecla
 		2:	
 			TotalMesa=TotalMesa+10000
+			Imprimir "Cargando..."
+			Esperar 1 Segundos
 			Imprimir "Adicional ingresado correctamente"
+			Imprimir "Total actual: ", TotalMesa
 			Imprimir "Presione cualquier tecla para continuar"
 			Esperar Tecla
 		3:
+			Imprimir "Cargando..."
+			Esperar 1 Segundos
 			Imprimir "No se le agregara ningun adicional"
+			Imprimir "Total actual: ", TotalMesa
 			Imprimir "Presione cualquier tecla para continuar"
 			Esperar Tecla
 	FinSegun
@@ -97,11 +122,13 @@ FinFuncion
 Funcion Bebidas ( TotalMesa Por Referencia)
 	Limpiar Pantalla 
 	Imprimir "==========================="
-	Imprimir "Que Bebida desea tomar?"
-	Escribir "1.        Pepsi"
-	Escribir "2.        Coca Cola"
-	Escribir "3.        Postobon"
-	Escribir "4.        Ninguno"
+	Imprimir "Que Bebida desea tomar?   |"
+	Imprimir "--------------------------|"
+	Escribir "1.--------Pepsi           |"
+	Escribir "2.--------Coca Cola       |"
+	Escribir "3.--------Postobon        |"
+	Escribir "4.--------Ninguno         |"
+	Imprimir "==========================="
 	leer bebida
 	
 	Mientras bebida<1 o bebida>4 Hacer
@@ -111,60 +138,78 @@ Funcion Bebidas ( TotalMesa Por Referencia)
 	
 	Segun bebida Hacer
 		1:
-			Tama√±oBebida(TotalMesa)
+			TamaÒoBebida(TotalMesa)
 		2:	
-			Tama√±oBebida(TotalMesa)
+			TamaÒoBebida(TotalMesa)
 		3:
-			Tama√±oBebida(TotalMesa)
+			TamaÒoBebida(TotalMesa)
 		4: 
 			Imprimir "Bebida digitada"
 			Imprimir "Total Actual: $", TotalMesa
 	FinSegun
+	
 FinFuncion
 
-Funcion Tama√±oBebida(TotalMesa Por Referencia)
-	Imprimir "============================="
-	Imprimir "En que tama√±o desea su bebida?"
-	Escribir "1.       Personal 3500"
-	Escribir "2.       1.5 L    7000"
-	Escribir "3.       Mega     9000"
-	Escribir "4.       SALIR"
+Funcion TamaÒoBebida(TotalMesa Por Referencia)
+	Imprimir "================================"
+	Imprimir "En que tamaÒo desea su bebida? |"
+	Imprimir "================================"
+	Escribir "1.       Personal 3500         |"
+	Escribir "2.       1.5 L    7000         |"
+	Escribir "3.       Mega     9000         |"
+	Escribir "4.       SALIR                 |"
+	Imprimir "================================"
 	leer Tbebida
-	Mientras Tbebida<1 o Tbebida>3 Hacer
+	Mientras Tbebida<1 o Tbebida>4 Hacer
 		Imprimir "Error,Valor invalido, intente nuevamente"
 		leer Tbebida
 	FinMientras
 	Segun Tbebida Hacer
 		1:
 			TotalMesa=TotalMesa+3500
+			Imprimir "Cargando..."
+			Esperar 1 Segundos
 			Imprimir "Bebida ingresado correctamente"
+			Imprimir "Total actual: ", TotalMesa
 			Imprimir "Presione cualquier tecla para continuar"
 			Esperar Tecla
 			Limpiar Pantalla
 		2:	
 			TotalMesa=TotalMesa+7000
+			Imprimir "Cargando..."
+			Esperar 1 Segundos
 			Imprimir "Bebida ingresado correctamente"
+			Imprimir "Total actual: ", TotalMesa
 			Imprimir "Presione cualquier tecla para continuar"
 			Esperar Tecla
 			Limpiar Pantalla
 		3:
 			TotalMesa=TotalMesa+9000
+			Imprimir "Cargando..."
+			Esperar 1 Segundos
 			Imprimir "Bebida ingresado correctamente"
+			Imprimir "Total actual: ", TotalMesa
 			Imprimir "Presione cualquier tecla para continuar"
 			Esperar Tecla
 			Limpiar Pantalla
 		4:
 			Imprimir "Volviendo..."
+			Esperar 2 Segundos
 	FinSegun   
 FinFuncion
 
-Funcion Tama√±opizza (TotalMesa Por Referencia)
-	Imprimir "============================="
-	Imprimir "En que tama√±o desea su pizza?"
-	Escribir "1.       Personal 8000"
-	Escribir "2.       Familiar 60000"
-	Escribir "3.       Mega     80000"
-	Escribir "4.       SALIR"
+
+
+
+Funcion TamaÒopizza (TotalMesa Por Referencia)
+	Imprimir "==============================="
+	Imprimir "En que tamaÒo desea su pizza? |"
+	Imprimir "==============================="
+	Escribir "1.       Personal 8000        |"
+	Escribir "2.       Familiar 60000       |"
+	Escribir "3.       Mega     80000       |"
+	Escribir "4.       SALIR                |"
+	Imprimir "==============================="
 	leer Tpizza
 	Mientras Tpizza<1 o Tpizza>4 Hacer
 		Imprimir "Error,Valor invalido, intente nuevamente"
@@ -173,33 +218,48 @@ Funcion Tama√±opizza (TotalMesa Por Referencia)
 	Segun Tpizza Hacer
 		1:
 			TotalMesa=TotalMesa+8000
-			Imprimir "Tama√±o ingresado correctamente"
-			Imprimir "Su pizza ha sido elegida correctamente"
+			Limpiar Pantalla
+			Imprimir "Cargando..."
+			Esperar 1 Segundos
+			Imprimir "========================================"
+			Imprimir "TamaÒo ingresado correctamente"
+			Imprimir "Ha elegido la opcion: ", Tpizza
 			Imprimir "Valor actual: $", TotalMesa
 			Imprimir "Presione cualquier tecla para continuar"
 			Esperar Tecla
 			Limpiar Pantalla
 		2:	
 			TotalMesa=TotalMesa+60000
-			Imprimir "Tama√±o ingresado correctamente"
-			Imprimir "Su pizza ha sido elegida correctamente"
+			Limpiar Pantalla
+			Imprimir "Cargando..."
+			Esperar 1 Segundos
+			Imprimir "========================================"
+			Imprimir "TamaÒo ingresado correctamente"
+			Imprimir "Ha elegido la opcion: ", Tpizza
 			Imprimir "Valor actual: $", TotalMesa
 			Imprimir "Presione cualquier tecla para continuar"
 			Esperar Tecla
 			Limpiar Pantalla
 		3:
 			TotalMesa=TotalMesa+80000
-			Imprimir "Tama√±o ingresado correctamente"
-			Imprimir "Su pizza ha sido elegida correctamente"
+			Limpiar Pantalla
+			Imprimir "Cargando..."
+			Esperar 1 Segundos
+			Imprimir "========================================"
+			Imprimir "TamaÒo ingresado correctamente"
+			Imprimir "Ha elegido la opcion: ", Tpizza
 			Imprimir "Valor actual: $", TotalMesa
 			Imprimir "Presione cualquier tecla para continuar"
 			Esperar Tecla
 			Limpiar Pantalla
 		4:
 			Imprimir "Volviendo al inicio..."
+			Esperar 2 Segundos
 	FinSegun   
 FinFuncion
 
-Algoritmo Pizzer√≠a
+
+
+Algoritmo PizzerÌa
 	menuprincipal(TotalGeneral,TotalMesa)
 FinAlgoritmo
